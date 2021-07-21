@@ -6,7 +6,7 @@ use Moneta\Payment\Helper\sdk\lib\Response;
 
 class ResponseErrorErrors extends Response {
 
-<<<<<<< HEAD
+
     public function __construct($errors = array())
         {
             if (is_array($errors)) {
@@ -21,7 +21,7 @@ class ResponseErrorErrors extends Response {
                 $this->_data['errors'] = $errors;
             }
         }
-=======
+
     public function __construct($errors = array()) {
         if (is_array($errors)) {
             foreach ($errors as $error) {
@@ -31,6 +31,6 @@ class ResponseErrorErrors extends Response {
             $this->_data[$errors] = $errors;
         }
     }
->>>>>>> 2ae2e3298f15e3d8bb642b00f3a113c1fbad843c
+
 
 }
